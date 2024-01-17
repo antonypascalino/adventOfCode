@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55ce54f3-20bf-48ce-ba2f-7cfc45ceb818" name="Changes" comment="Fourth December">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="55ce54f3-20bf-48ce-ba2f-7cfc45ceb818" name="Changes" comment="Fifth December">
+      <change beforePath="$PROJECT_DIR$/5DecemberFirstPart.py" beforeDir="false" afterPath="$PROJECT_DIR$/5DecemberFirstPart.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +82,7 @@
       <workItem from="1702476636948" duration="19822000" />
       <workItem from="1704799455957" duration="80000" />
       <workItem from="1704799557695" duration="327000" />
-      <workItem from="1705306617807" duration="15231000" />
+      <workItem from="1705306617807" duration="16022000" />
     </task>
     <task id="LOCAL-00001" summary="First December">
       <option name="closed" value="true" />
@@ -116,7 +116,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705312403820</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Fifth December">
+      <option name="closed" value="true" />
+      <created>1705513932498</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1705513932499</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,7 +146,8 @@
     <MESSAGE value="Second December" />
     <MESSAGE value="Third December" />
     <MESSAGE value="Fourth December" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fourth December" />
+    <MESSAGE value="Fifth December" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fifth December" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

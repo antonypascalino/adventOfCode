@@ -1,4 +1,3 @@
-
 def get_map(puzzle_map):
     while True:
         puzzle_input = input()
@@ -17,30 +16,54 @@ def get_map(puzzle_map):
         puzzle_map.append(curr_line)
 
 
-def find_mapped_value(number, current_map):
-    value = 0
+def find_mapped_value(seed_range, current_map):
     for line in current_map:
-        if line[1] <= number < line[1] + line[2]:
-            value = number + (line[0] - line[1])
-            return value
-        value = number
-    return value
+        source, dest, length = map(int, line.split(" "))
+        x1, x2 = map(int, seed_range)
+        end = dest + length
+        diff = end - dest
+        if x2 <= dest and x1 >= end:
+            find_mapped_value((x1+diff, x2+diff), current_map)
+        if x1 > dest and x2 < end:
+            x1 = x1 + diff
+            x2 = x2 + diff
+        if x1 < dest:
+            find_mapped_value((x1, dest), current_map)
+        if x2 > end:
+            find_mapped_value((end, x2), current_map)
 
 
 user_input = input()
 user_input = user_input.split(":")[1]
-seeds = []
+seeds_ranges = []
 
 curr_seed = ""
+curr_range = ""
+isSeed = True
+firstBlank = True
 
 # Read all the seed integers
 for char in user_input:
-    if char == " " and curr_seed != "":
-        seeds.append(int(curr_seed))
-        curr_seed = ""
-    elif char.isdigit():
-        curr_seed += char
-seeds.append(int(curr_seed))
+    if char.isdigit():
+        if isSeed:
+            curr_seed += char
+        else:
+            curr_range += char
+    if char == " " and firstBlank:
+        firstBlank = False
+    elif char == " " and not firstBlank:
+        if isSeed:
+            curr_seed = int(curr_seed)
+            isSeed = False
+        else:
+            curr_range = int(curr_range)
+            seeds_ranges.append((curr_seed, curr_seed + curr_range))
+            curr_seed = ""
+            curr_range = ""
+            isSeed = True
+curr_range = int(curr_range)
+seeds_ranges.append((curr_seed, curr_seed + curr_range))
+print(seeds_ranges)
 
 input()
 input()
@@ -73,6 +96,7 @@ get_map(humidity_to_location_map)
 
 locations = []
 for seed in seeds:
+    print(seed)
     soil = find_mapped_value(seed, seed_to_soil_map)
     fertilizer = find_mapped_value(soil, soil_to_fertilizer_map)
     water = find_mapped_value(fertilizer, fertilizer_to_water_map)
