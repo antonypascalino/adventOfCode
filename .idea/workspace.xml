@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55ce54f3-20bf-48ce-ba2f-7cfc45ceb818" name="Changes" comment="Fifth December (only First Part working)">
+    <list default="true" id="55ce54f3-20bf-48ce-ba2f-7cfc45ceb818" name="Changes" comment="Sixth December">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +44,9 @@
     "Python.4DecemberSecondPart.executor": "Run",
     "Python.5DecemberFirstPart.executor": "Run",
     "Python.6DecemberFirstPart.executor": "Run",
-    "Python.6DecemberSecondPart.executor": "Debug",
+    "Python.6DecemberSecondPart.executor": "Run",
+    "Python.7DecemberFirstPart.executor": "Run",
+    "Python.7DecemberSecondPart.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
@@ -84,7 +86,7 @@
       <workItem from="1702476636948" duration="19822000" />
       <workItem from="1704799455957" duration="80000" />
       <workItem from="1704799557695" duration="327000" />
-      <workItem from="1705306617807" duration="22310000" />
+      <workItem from="1705306617807" duration="33041000" />
     </task>
     <task id="LOCAL-00001" summary="First December">
       <option name="closed" value="true" />
@@ -134,7 +136,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705514515268</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Sixth December">
+      <option name="closed" value="true" />
+      <created>1705526010596</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1705526010596</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,7 +168,8 @@
     <MESSAGE value="Fourth December" />
     <MESSAGE value="Fifth December" />
     <MESSAGE value="Fifth December (only First Part working)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fifth December (only First Part working)" />
+    <MESSAGE value="Sixth December" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sixth December" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -189,24 +200,31 @@
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <condition expression="end == 1" language="Python" />
           <url>file://$PROJECT_DIR$/6DecemberSecondPart.py</url>
-          <line>7</line>
-          <option name="timeStamp" value="33" />
+          <line>15</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <condition expression="evaluated_hand[0] == &quot;798AQ&quot;" language="Python" />
+          <url>file://$PROJECT_DIR$/7DecemberFirstPart.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="45" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/adventOfCode$1December.coverage" NAME="1December Coverage Results" MODIFIED="1702398433889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/adventOfCode$2DecemberSecondPart.coverage" NAME="2DecemberSecondPart Coverage Results" MODIFIED="1702404105129" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/adventOfCode$3DecemberSecondPart.coverage" NAME="3DecemberSecondPart Coverage Results" MODIFIED="1703173637827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/adventOfCode$7DecemberFirstPart.coverage" NAME="7DecemberFirstPart Coverage Results" MODIFIED="1705577327132" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/adventOfCode$6DecemberSecondPart.coverage" NAME="6DecemberSecondPart Coverage Results" MODIFIED="1705525919954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/adventOfCode$4DecemberFirstPart.coverage" NAME="4DecemberFirstPart Coverage Results" MODIFIED="1705307474246" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/adventOfCode$6DecemberFirstPart.coverage" NAME="6DecemberFirstPart Coverage Results" MODIFIED="1705519627752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/adventOfCode$2DecemberSecondPart.coverage" NAME="2DecemberSecondPart Coverage Results" MODIFIED="1702404105129" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/adventOfCode$2DecemberFirstPart.coverage" NAME="2DecemberFirstPart Coverage Results" MODIFIED="1702402730333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/adventOfCode$4DecemberSecondPart.coverage" NAME="4DecemberSecondPart Coverage Results" MODIFIED="1705309810068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/adventOfCode$6DecemberSecondPart.coverage" NAME="6DecemberSecondPart Coverage Results" MODIFIED="1705525702914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/adventOfCode$3DecemberFirstPart.coverage" NAME="3DecemberFirstPart Coverage Results" MODIFIED="1702420303326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/adventOfCode$4DecemberFirstPart.coverage" NAME="4DecemberFirstPart Coverage Results" MODIFIED="1705307474246" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/adventOfCode$7DecemberSecondPart.coverage" NAME="7DecemberSecondPart Coverage Results" MODIFIED="1705590115633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/adventOfCode$5DecemberFirstPart.coverage" NAME="5DecemberFirstPart Coverage Results" MODIFIED="1705514455928" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/adventOfCode$6DecemberFirstPart.coverage" NAME="6DecemberFirstPart Coverage Results" MODIFIED="1705519627752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/adventOfCode$3DecemberFirstPart.coverage" NAME="3DecemberFirstPart Coverage Results" MODIFIED="1702420303326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
